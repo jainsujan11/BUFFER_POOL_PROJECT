@@ -12,7 +12,7 @@
 
 using namespace std;
 
-#define NUM_RECORDS 166
+#define NUM_RECORDS 100
 
 // Global I/O counters (used in DiskManager/BufferPool)
 extern int readCount, writeCount;
@@ -33,9 +33,12 @@ bool createInitialDB(const string& filename) {
 
     const char *sql1 = "CREATE TABLE stud_sport (roll TEXT PRIMARY KEY, sport TEXT);";
     const char *sql2 = "CREATE TABLE stud_city (roll TEXT PRIMARY KEY, city TEXT);";
+    const char *sql3 = "CREATE TABLE stud_scores (roll TEXT PRIMARY KEY, score INTEGER);";
+
 
     rc = sqlite3_exec(db, sql1, nullptr, nullptr, nullptr);
     rc |= sqlite3_exec(db, sql2, nullptr, nullptr, nullptr);
+    rc |= sqlite3_exec(db, sql3, nullptr, nullptr, nullptr);
 
     sqlite3_close(db);
     cout << "Initial DB created using default VFS." << endl;
@@ -114,6 +117,14 @@ int main() {
         if (rc2 != SQLITE_OK) {
             cerr << "Insert into stud_city failed: " << sqlite3_errmsg(db) << "\n";
         }
+
+        // Insert into stud_scores
+        int score = rand() % 101;
+        sprintf(sqlInsert, "INSERT INTO stud_scores VALUES('%s', %d);", roll.c_str(), score);
+        int rc3 = sqlite3_exec(db, sqlInsert, nullptr, nullptr, nullptr);
+        if (rc3 != SQLITE_OK) {
+            cerr << "Insert into stud_scores failed: " << sqlite3_errmsg(db) << "\n";
+        }
     }
     
     // Debug: Verify if the records are inserted successfully
@@ -137,6 +148,16 @@ int main() {
         return 0;
     }, nullptr, nullptr);
 
+    const char *checkScoresSQL = "SELECT * FROM stud_scores;";
+    cout << "Checking stud_scores table:" << endl;
+    sqlite3_exec(db, checkScoresSQL, [](void*, int argc, char **argv, char **azColName) -> int {
+        for (int i = 0; i < argc; i++) {
+            cout << azColName[i] << ": " << (argv[i] ? argv[i] : "NULL") << "  ";
+        }
+        cout << "\n";
+        return 0;
+    }, nullptr, nullptr);
+
 
     sqlite3_exec(db, "COMMIT;", nullptr, nullptr, nullptr);
     cout << "Inserted " << rolls.size() << " records." << endl;
@@ -151,15 +172,27 @@ int main() {
 
     // Run join query
     const char *joinSQL =
-        "SELECT s.roll, s.sport, c.city "
-        "FROM stud_sport s JOIN stud_city c ON s.roll = c.roll;";
+        "SELECT stud_sport.roll, stud_sport.sport, stud_city.city, stud_scores.score "
+        "FROM stud_sport "
+        "JOIN stud_city ON stud_sport.roll = stud_city.roll "
+        "JOIN stud_scores ON stud_sport.roll = stud_scores.roll;";
     
     cout << "Join query results:" << endl;
-    rc = sqlite3_exec(db, joinSQL, [](void*, int argc, char **argv, char **azColName) -> int {
+    sqlite3_exec(db, joinSQL, [](void*, int argc, char **argv, char **azColName) -> int {
         for (int i = 0; i < argc; i++) {
             cout << azColName[i] << ": " << (argv[i] ? argv[i] : "NULL") << "  ";
         }
         cout << "\n";
+        return 0;
+    }, nullptr, nullptr);
+
+    // Run SUM(score) query
+    const char *sumSQL = "SELECT SUM(score) AS total_score FROM stud_scores;";
+    cout << "Total sum of all scores:" << endl;
+    sqlite3_exec(db, sumSQL, [](void*, int argc, char **argv, char **azColName) -> int {
+        for (int i = 0; i < argc; i++) {
+            cout << azColName[i] << ": " << (argv[i] ? argv[i] : "NULL") << endl;
+        }
         return 0;
     }, nullptr, nullptr);
 
