@@ -5,7 +5,6 @@
 #include <string>
 #include <fstream>
 #include <filesystem>
-
 #include "sqlite3.h"
 #include "disk.h"
 #include "buffer_mgr.h"
@@ -126,65 +125,64 @@ int main() {
             cerr << "Insert into stud_scores failed: " << sqlite3_errmsg(db) << "\n";
         }
     }
+    // // Debug: Verify if the records are inserted successfully
+    // const char *checkSQL = "SELECT * FROM stud_sport;";
+    // cout << "Checking stud_sport table:" << endl;
+    // sqlite3_exec(db, checkSQL, [](void*, int argc, char **argv, char **azColName) -> int {
+    //     for (int i = 0; i < argc; i++) {
+    //         cout << azColName[i] << ": " << (argv[i] ? argv[i] : "NULL") << "  ";
+    //     }
+    //     cout << "\n";
+    //     return 0;
+    // }, nullptr, nullptr);
+
+    // const char *checkCitySQL = "SELECT * FROM stud_city;";
+    // cout << "Checking stud_city table:" << endl;
+    // sqlite3_exec(db, checkCitySQL, [](void*, int argc, char **argv, char **azColName) -> int {
+    //     for (int i = 0; i < argc; i++) {
+    //         cout << azColName[i] << ": " << (argv[i] ? argv[i] : "NULL") << "  ";
+    //     }
+    //     cout << "\n";
+    //     return 0;
+    // }, nullptr, nullptr);
+
+    // const char *checkScoresSQL = "SELECT * FROM stud_scores;";
+    // cout << "Checking stud_scores table:" << endl;
+    // sqlite3_exec(db, checkScoresSQL, [](void*, int argc, char **argv, char **azColName) -> int {
+    //     for (int i = 0; i < argc; i++) {
+    //         cout << azColName[i] << ": " << (argv[i] ? argv[i] : "NULL") << "  ";
+    //     }
+    //     cout << "\n";
+    //     return 0;
+    // }, nullptr, nullptr);
+
+
+    // sqlite3_exec(db, "COMMIT;", nullptr, nullptr, nullptr);
+    // cout << "Inserted " << rolls.size() << " records." << endl;
+
+    // int ret = sqlite3_exec(db, "PRAGMA integrity_check;", [](void*, int argc, char** argv, char**) -> int {
+    //     cout << "Integrity check: " << argv[0] << endl;
+    //     return 0;
+    // }, nullptr, nullptr);
+    // if (ret != SQLITE_OK) {
+    //     cerr << "Some Error: " << sqlite3_errmsg(db) << endl;
+    // }
+
+    // // Run join query
+    // const char *joinSQL =
+    //     "SELECT stud_sport.roll, stud_sport.sport, stud_city.city, stud_scores.score "
+    //     "FROM stud_sport "
+    //     "JOIN stud_city ON stud_sport.roll = stud_city.roll "
+    //     "JOIN stud_scores ON stud_sport.roll = stud_scores.roll;";
     
-    // Debug: Verify if the records are inserted successfully
-    const char *checkSQL = "SELECT * FROM stud_sport;";
-    cout << "Checking stud_sport table:" << endl;
-    sqlite3_exec(db, checkSQL, [](void*, int argc, char **argv, char **azColName) -> int {
-        for (int i = 0; i < argc; i++) {
-            cout << azColName[i] << ": " << (argv[i] ? argv[i] : "NULL") << "  ";
-        }
-        cout << "\n";
-        return 0;
-    }, nullptr, nullptr);
-
-    const char *checkCitySQL = "SELECT * FROM stud_city;";
-    cout << "Checking stud_city table:" << endl;
-    sqlite3_exec(db, checkCitySQL, [](void*, int argc, char **argv, char **azColName) -> int {
-        for (int i = 0; i < argc; i++) {
-            cout << azColName[i] << ": " << (argv[i] ? argv[i] : "NULL") << "  ";
-        }
-        cout << "\n";
-        return 0;
-    }, nullptr, nullptr);
-
-    const char *checkScoresSQL = "SELECT * FROM stud_scores;";
-    cout << "Checking stud_scores table:" << endl;
-    sqlite3_exec(db, checkScoresSQL, [](void*, int argc, char **argv, char **azColName) -> int {
-        for (int i = 0; i < argc; i++) {
-            cout << azColName[i] << ": " << (argv[i] ? argv[i] : "NULL") << "  ";
-        }
-        cout << "\n";
-        return 0;
-    }, nullptr, nullptr);
-
-
-    sqlite3_exec(db, "COMMIT;", nullptr, nullptr, nullptr);
-    cout << "Inserted " << rolls.size() << " records." << endl;
-
-    int ret = sqlite3_exec(db, "PRAGMA integrity_check;", [](void*, int argc, char** argv, char**) -> int {
-        cout << "Integrity check: " << argv[0] << endl;
-        return 0;
-    }, nullptr, nullptr);
-    if (ret != SQLITE_OK) {
-        cerr << "Some Error: " << sqlite3_errmsg(db) << endl;
-    }
-
-    // Run join query
-    const char *joinSQL =
-        "SELECT stud_sport.roll, stud_sport.sport, stud_city.city, stud_scores.score "
-        "FROM stud_sport "
-        "JOIN stud_city ON stud_sport.roll = stud_city.roll "
-        "JOIN stud_scores ON stud_sport.roll = stud_scores.roll;";
-    
-    cout << "Join query results:" << endl;
-    sqlite3_exec(db, joinSQL, [](void*, int argc, char **argv, char **azColName) -> int {
-        for (int i = 0; i < argc; i++) {
-            cout << azColName[i] << ": " << (argv[i] ? argv[i] : "NULL") << "  ";
-        }
-        cout << "\n";
-        return 0;
-    }, nullptr, nullptr);
+    // cout << "Join query results:" << endl;
+    // sqlite3_exec(db, joinSQL, [](void*, int argc, char **argv, char **azColName) -> int {
+    //     for (int i = 0; i < argc; i++) {
+    //         cout << azColName[i] << ": " << (argv[i] ? argv[i] : "NULL") << "  ";
+    //     }
+    //     cout << "\n";
+    //     return 0;
+    // }, nullptr, nullptr);
 
     // Run SUM(score) query
     const char *sumSQL = "SELECT SUM(score) AS total_score FROM stud_scores;";

@@ -6,7 +6,7 @@
 #include <fstream>
 #include <stdexcept>
 using namespace std;
-static const int PAGE_SIZE = 4096; // 4Kb pages 
+static const int PAGE_SIZE = 1024; // 4Kb pages 
 class SM_FileHandle {
 public:
     string fileName;

@@ -1,4 +1,3 @@
-Initial DB created using default VFS.
 Custom VFS registered.
 [myvfsOpen] Opened file (exists=1): simulation.db
 Request for page 0 of file simulation.db
@@ -8,14 +7,41 @@ Database opened using custom VFS.
 Inserting records...
 Request for page 0 of file simulation.db
 	Page 0 of file simulation.db already in buffer
-Request for page 0 of file simulation.db
-	Page 0 of file simulation.db already in buffer
 Request for page 1 of file simulation.db
 [readBlock] Reading page 1 of simulation.db
 	Page 1 of file simulation.db loaded in free frame 1
 Request for page 2 of file simulation.db
 [readBlock] Reading page 2 of simulation.db
 	Page 2 of file simulation.db loaded in free frame 2
+Request for page 3 of file simulation.db
+[readBlock] Reading page 3 of simulation.db
+	Page 3 of file simulation.db loaded in free frame 3
+Request for page 0 of file simulation.db
+	Page 0 of file simulation.db already in buffer
+Request for page 4 of file simulation.db
+[readBlock] Reading page 4 of simulation.db
+	Page 4 of file simulation.db loaded in free frame 4
+Request for page 5 of file simulation.db
+[readBlock] Reading page 5 of simulation.db
+	Page 5 of file simulation.db loaded in free frame 5
+Request for page 6 of file simulation.db
+[readBlock] Reading page 6 of simulation.db
+	Page 6 of file simulation.db loaded in free frame 6
+Request for page 7 of file simulation.db
+[readBlock] Reading page 7 of simulation.db
+	Page 7 of file simulation.db loaded in free frame 7
+Request for page 8 of file simulation.db
+[readBlock] Reading page 8 of simulation.db
+	Page 8 of file simulation.db loaded in free frame 8
+Request for page 9 of file simulation.db
+[readBlock] Reading page 9 of simulation.db
+	Page 9 of file simulation.db loaded in free frame 9
+Request for page 10 of file simulation.db
+[readBlock] Reading page 10 of simulation.db
+	Page 10 of file simulation.db loaded in free frame 10
+Request for page 11 of file simulation.db
+[readBlock] Reading page 11 of simulation.db
+	Page 11 of file simulation.db loaded in free frame 11
 [myvfsOpen] Opened file (exists=1): simulation.db-journal
 Request for page 0 of file simulation.db-journal
 [readBlock] Reading page 0 of simulation.db-journal
@@ -26,568 +52,149 @@ Request for page 1 of file simulation.db-journal
 	Page 1 of file simulation.db-journal already in buffer
 Request for page 2 of file simulation.db-journal
 	Page 2 of file simulation.db-journal loaded in free frame 2
-Request for page 2 of file simulation.db-journal
-	Page 2 of file simulation.db-journal already in buffer
-Request for page 2 of file simulation.db-journal
-	Page 2 of file simulation.db-journal already in buffer
-Request for page 2 of file simulation.db-journal
-	Page 2 of file simulation.db-journal already in buffer
 Request for page 3 of file simulation.db-journal
 	Page 3 of file simulation.db-journal loaded in free frame 3
-Request for page 3 of file simulation.db-journal
-	Page 3 of file simulation.db-journal already in buffer
-Request for page 3 of file simulation.db
-[readBlock] Reading page 3 of simulation.db
-	Page 3 of file simulation.db loaded in free frame 3
-Request for page 4 of file simulation.db
-[readBlock] Reading page 4 of simulation.db
-	Page 4 of file simulation.db loaded in free frame 4
-Request for page 3 of file simulation.db-journal
-	Page 3 of file simulation.db-journal already in buffer
-Request for page 3 of file simulation.db-journal
-	Page 3 of file simulation.db-journal already in buffer
 Request for page 4 of file simulation.db-journal
 	Page 4 of file simulation.db-journal loaded in free frame 4
-Request for page 4 of file simulation.db-journal
-	Page 4 of file simulation.db-journal already in buffer
-Request for page 4 of file simulation.db-journal
-	Page 4 of file simulation.db-journal already in buffer
-Request for page 4 of file simulation.db-journal
-	Page 4 of file simulation.db-journal already in buffer
 Request for page 5 of file simulation.db-journal
 	Page 5 of file simulation.db-journal loaded in free frame 5
 Request for page 5 of file simulation.db-journal
 	Page 5 of file simulation.db-journal already in buffer
-Checking stud_sport table:
-roll: 20CS13306  sport: Tennis  
-roll: 18CS16651  sport: BasketBall  
-roll: 14CS18136  sport: Tennis  
-roll: 17CS10397  sport: Tennis  
-roll: 20CS13855  sport: TableTennis  
-roll: 20CS16194  sport: Swimming  
-roll: 20CS14652  sport: Baseball  
-roll: 14CS18150  sport: Swimming  
-roll: 14CS14817  sport: BasketBall  
-roll: 11CS17864  sport: Badminton  
-roll: 16CS16441  sport: Cricket  
-roll: 16CS12081  sport: BasketBall  
-roll: 22CS18968  sport: Tennis  
-roll: 11CS13970  sport: BasketBall  
-roll: 14CS11165  sport: BasketBall  
-roll: 13CS13632  sport: Tennis  
-roll: 11CS17445  sport: TableTennis  
-roll: 22CS14893  sport: TableTennis  
-roll: 19CS18447  sport: Tennis  
-roll: 18CS18902  sport: Cricket  
-roll: 18CS19879  sport: Cricket  
-roll: 11CS10846  sport: Badminton  
-roll: 14CS18115  sport: Tennis  
-roll: 11CS12189  sport: Baseball  
-roll: 21CS15078  sport: Swimming  
-roll: 22CS17723  sport: BasketBall  
-roll: 19CS15081  sport: TableTennis  
-roll: 12CS14265  sport: BasketBall  
-roll: 16CS13040  sport: Tennis  
-roll: 20CS11619  sport: BasketBall  
-roll: 13CS13202  sport: TableTennis  
-roll: 20CS10141  sport: Badminton  
-roll: 21CS11664  sport: TableTennis  
-roll: 18CS14339  sport: BasketBall  
-roll: 23CS10441  sport: Tennis  
-roll: 13CS12591  sport: Tennis  
-roll: 23CS19202  sport: Swimming  
-roll: 18CS14477  sport: Baseball  
-roll: 14CS18868  sport: Tennis  
-roll: 17CS19938  sport: Swimming  
-roll: 18CS12534  sport: Tennis  
-roll: 20CS10382  sport: Cricket  
-roll: 16CS15973  sport: BasketBall  
-roll: 14CS16717  sport: BasketBall  
-roll: 19CS14745  sport: Badminton  
-roll: 13CS11708  sport: BasketBall  
-roll: 23CS15557  sport: Baseball  
-roll: 15CS12536  sport: TableTennis  
-roll: 22CS17700  sport: Badminton  
-roll: 12CS11803  sport: TableTennis  
-roll: 20CS18753  sport: TableTennis  
-roll: 19CS18689  sport: BasketBall  
-roll: 20CS16828  sport: Cricket  
-roll: 14CS18947  sport: Baseball  
-roll: 18CS10348  sport: Tennis  
-roll: 13CS16976  sport: Cricket  
-roll: 16CS15056  sport: Tennis  
-roll: 11CS11658  sport: Baseball  
-roll: 23CS15973  sport: Baseball  
-roll: 20CS17740  sport: Baseball  
-roll: 15CS13515  sport: Baseball  
-roll: 22CS13832  sport: Baseball  
-roll: 19CS15377  sport: Baseball  
-roll: 23CS10288  sport: Baseball  
-roll: 23CS14792  sport: BasketBall  
-roll: 17CS14974  sport: Baseball  
-roll: 12CS11340  sport: Badminton  
-roll: 14CS11777  sport: Baseball  
-roll: 14CS11627  sport: Cricket  
-roll: 12CS13432  sport: Swimming  
-roll: 14CS17914  sport: Badminton  
-roll: 14CS18895  sport: TableTennis  
-roll: 17CS12447  sport: Tennis  
-roll: 17CS13409  sport: Cricket  
-roll: 14CS17857  sport: TableTennis  
-roll: 19CS18501  sport: Tennis  
-roll: 23CS12341  sport: Swimming  
-roll: 14CS10927  sport: Cricket  
-roll: 23CS16400  sport: Badminton  
-roll: 17CS12052  sport: Badminton  
-roll: 11CS14454  sport: BasketBall  
-roll: 22CS13287  sport: Cricket  
-roll: 15CS18734  sport: Baseball  
-roll: 11CS15678  sport: TableTennis  
-roll: 13CS19206  sport: Cricket  
-roll: 13CS12645  sport: Baseball  
-roll: 23CS19529  sport: TableTennis  
-roll: 14CS18369  sport: TableTennis  
-roll: 11CS18666  sport: Cricket  
-roll: 11CS12757  sport: Swimming  
-roll: 23CS17853  sport: Tennis  
-roll: 11CS14047  sport: Tennis  
-roll: 19CS19857  sport: TableTennis  
-roll: 15CS15479  sport: Swimming  
-roll: 16CS17435  sport: Badminton  
-roll: 15CS11787  sport: Badminton  
-roll: 21CS18783  sport: Badminton  
-roll: 23CS14376  sport: Tennis  
-roll: 19CS11142  sport: Cricket  
-roll: 23CS11367  sport: Badminton  
-roll: 23CS17121  sport: Cricket  
-roll: 11CS16894  sport: Swimming  
-roll: 14CS17389  sport: Badminton  
-roll: 19CS12275  sport: TableTennis  
-roll: 15CS13488  sport: Tennis  
-roll: 19CS12950  sport: Baseball  
-roll: 12CS14556  sport: Swimming  
-roll: 12CS10338  sport: TableTennis  
-roll: 11CS11314  sport: BasketBall  
-roll: 20CS13319  sport: Cricket  
-roll: 13CS13626  sport: Cricket  
-roll: 21CS10493  sport: Cricket  
-roll: 17CS13311  sport: Badminton  
-roll: 15CS19653  sport: TableTennis  
-roll: 13CS18615  sport: Baseball  
-roll: 22CS14527  sport: BasketBall  
-roll: 19CS16267  sport: Swimming  
-roll: 14CS12255  sport: BasketBall  
-roll: 18CS14670  sport: Badminton  
-roll: 16CS16861  sport: Swimming  
-roll: 18CS12766  sport: TableTennis  
-roll: 13CS11046  sport: Cricket  
-roll: 19CS16294  sport: Cricket  
-roll: 20CS15801  sport: TableTennis  
-roll: 17CS13262  sport: Cricket  
-roll: 18CS19062  sport: Cricket  
-roll: 15CS11999  sport: Tennis  
-roll: 15CS16389  sport: Cricket  
-roll: 13CS17145  sport: Swimming  
-roll: 12CS12126  sport: Swimming  
-roll: 11CS19429  sport: Badminton  
-roll: 16CS19609  sport: Swimming  
-roll: 18CS14731  sport: Swimming  
-roll: 16CS10774  sport: BasketBall  
-roll: 17CS11082  sport: Badminton  
-roll: 22CS12574  sport: Badminton  
-roll: 20CS16004  sport: Swimming  
-roll: 20CS10868  sport: Cricket  
-roll: 18CS13049  sport: Badminton  
-roll: 22CS18867  sport: Badminton  
-roll: 22CS18948  sport: Baseball  
-roll: 20CS11819  sport: Cricket  
-roll: 20CS13098  sport: TableTennis  
-roll: 19CS18313  sport: Baseball  
-roll: 12CS16014  sport: Tennis  
-roll: 11CS16236  sport: Tennis  
-roll: 21CS11015  sport: Badminton  
-roll: 12CS19997  sport: Badminton  
-roll: 19CS13153  sport: Tennis  
-roll: 18CS18494  sport: BasketBall  
-roll: 20CS12458  sport: Tennis  
-roll: 12CS12411  sport: Swimming  
-roll: 15CS13128  sport: Tennis  
-roll: 12CS12759  sport: BasketBall  
-roll: 12CS19659  sport: BasketBall  
-roll: 14CS16182  sport: Badminton  
-roll: 12CS14361  sport: Swimming  
-roll: 15CS19248  sport: Badminton  
-roll: 14CS17595  sport: Tennis  
-roll: 17CS15185  sport: Swimming  
-roll: 22CS12273  sport: TableTennis  
-roll: 21CS17045  sport: TableTennis  
-roll: 15CS17741  sport: Tennis  
-roll: 17CS18654  sport: Cricket  
-roll: 12CS19400  sport: Swimming  
-roll: 15CS14212  sport: Swimming  
-Checking stud_city table:
-roll: 20CS13306  city: Kharagpur  
-roll: 18CS16651  city: Gurdaspur  
-roll: 14CS18136  city: Gurdaspur  
-roll: 17CS10397  city: Sangrur  
-roll: 20CS13855  city: Nabha  
-roll: 20CS16194  city: Amritsar  
-roll: 20CS14652  city: Sangrur  
-roll: 14CS18150  city: Gurdaspur  
-roll: 14CS14817  city: Kharagpur  
-roll: 11CS17864  city: Ludhiana  
-roll: 16CS16441  city: Kharagpur  
-roll: 16CS12081  city: Patiala  
-roll: 22CS18968  city: Sangrur  
-roll: 11CS13970  city: Gurdaspur  
-roll: 14CS11165  city: Ludhiana  
-roll: 13CS13632  city: Amritsar  
-roll: 11CS17445  city: Sangrur  
-roll: 22CS14893  city: Amritsar  
-roll: 19CS18447  city: Patiala  
-roll: 18CS18902  city: Gurdaspur  
-roll: 18CS19879  city: Gurdaspur  
-roll: 11CS10846  city: Gurdaspur  
-roll: 14CS18115  city: Nabha  
-roll: 11CS12189  city: Amritsar  
-roll: 21CS15078  city: Ludhiana  
-roll: 22CS17723  city: Gurdaspur  
-roll: 19CS15081  city: Nabha  
-roll: 12CS14265  city: Nabha  
-roll: 16CS13040  city: Nabha  
-roll: 20CS11619  city: Sangrur  
-roll: 13CS13202  city: Patiala  
-roll: 20CS10141  city: Patiala  
-roll: 21CS11664  city: Patiala  
-roll: 18CS14339  city: Kharagpur  
-roll: 23CS10441  city: Kharagpur  
-roll: 13CS12591  city: Amritsar  
-roll: 23CS19202  city: Kharagpur  
-roll: 18CS14477  city: Sangrur  
-roll: 14CS18868  city: Amritsar  
-roll: 17CS19938  city: Patiala  
-roll: 18CS12534  city: Patiala  
-roll: 20CS10382  city: Kharagpur  
-roll: 16CS15973  city: Ludhiana  
-roll: 14CS16717  city: Gurdaspur  
-roll: 19CS14745  city: Kharagpur  
-roll: 13CS11708  city: Ludhiana  
-roll: 23CS15557  city: Nabha  
-roll: 15CS12536  city: Amritsar  
-roll: 22CS17700  city: Ludhiana  
-roll: 12CS11803  city: Patiala  
-roll: 20CS18753  city: Patiala  
-roll: 19CS18689  city: Nabha  
-roll: 20CS16828  city: Amritsar  
-roll: 14CS18947  city: Kharagpur  
-roll: 18CS10348  city: Ludhiana  
-roll: 13CS16976  city: Gurdaspur  
-roll: 16CS15056  city: Patiala  
-roll: 11CS11658  city: Patiala  
-roll: 23CS15973  city: Gurdaspur  
-roll: 20CS17740  city: Gurdaspur  
-roll: 15CS13515  city: Sangrur  
-roll: 22CS13832  city: Ludhiana  
-roll: 19CS15377  city: Nabha  
-roll: 23CS10288  city: Patiala  
-roll: 23CS14792  city: Nabha  
-roll: 17CS14974  city: Ludhiana  
-roll: 12CS11340  city: Ludhiana  
-roll: 14CS11777  city: Patiala  
-roll: 14CS11627  city: Sangrur  
-roll: 12CS13432  city: Nabha  
-roll: 14CS17914  city: Amritsar  
-roll: 14CS18895  city: Sangrur  
-roll: 17CS12447  city: Nabha  
-roll: 17CS13409  city: Sangrur  
-roll: 14CS17857  city: Sangrur  
-roll: 19CS18501  city: Gurdaspur  
-roll: 23CS12341  city: Kharagpur  
-roll: 14CS10927  city: Kharagpur  
-roll: 23CS16400  city: Ludhiana  
-roll: 17CS12052  city: Ludhiana  
-roll: 11CS14454  city: Kharagpur  
-roll: 22CS13287  city: Sangrur  
-roll: 15CS18734  city: Patiala  
-roll: 11CS15678  city: Sangrur  
-roll: 13CS19206  city: Patiala  
-roll: 13CS12645  city: Nabha  
-roll: 23CS19529  city: Patiala  
-roll: 14CS18369  city: Kharagpur  
-roll: 11CS18666  city: Amritsar  
-roll: 11CS12757  city: Ludhiana  
-roll: 23CS17853  city: Patiala  
-roll: 11CS14047  city: Nabha  
-roll: 19CS19857  city: Sangrur  
-roll: 15CS15479  city: Sangrur  
-roll: 16CS17435  city: Gurdaspur  
-roll: 15CS11787  city: Patiala  
-roll: 21CS18783  city: Patiala  
-roll: 23CS14376  city: Sangrur  
-roll: 19CS11142  city: Patiala  
-roll: 23CS11367  city: Gurdaspur  
-roll: 23CS17121  city: Nabha  
-roll: 11CS16894  city: Kharagpur  
-roll: 14CS17389  city: Gurdaspur  
-roll: 19CS12275  city: Ludhiana  
-roll: 15CS13488  city: Sangrur  
-roll: 19CS12950  city: Amritsar  
-roll: 12CS14556  city: Gurdaspur  
-roll: 12CS10338  city: Amritsar  
-roll: 11CS11314  city: Sangrur  
-roll: 20CS13319  city: Sangrur  
-roll: 13CS13626  city: Ludhiana  
-roll: 21CS10493  city: Sangrur  
-roll: 17CS13311  city: Kharagpur  
-roll: 15CS19653  city: Ludhiana  
-roll: 13CS18615  city: Patiala  
-roll: 22CS14527  city: Amritsar  
-roll: 19CS16267  city: Amritsar  
-roll: 14CS12255  city: Kharagpur  
-roll: 18CS14670  city: Ludhiana  
-roll: 16CS16861  city: Kharagpur  
-roll: 18CS12766  city: Gurdaspur  
-roll: 13CS11046  city: Kharagpur  
-roll: 19CS16294  city: Kharagpur  
-roll: 20CS15801  city: Nabha  
-roll: 17CS13262  city: Nabha  
-roll: 18CS19062  city: Patiala  
-roll: 15CS11999  city: Sangrur  
-roll: 15CS16389  city: Kharagpur  
-roll: 13CS17145  city: Gurdaspur  
-roll: 12CS12126  city: Ludhiana  
-roll: 11CS19429  city: Sangrur  
-roll: 16CS19609  city: Amritsar  
-roll: 18CS14731  city: Patiala  
-roll: 16CS10774  city: Nabha  
-roll: 17CS11082  city: Gurdaspur  
-roll: 22CS12574  city: Sangrur  
-roll: 20CS16004  city: Nabha  
-roll: 20CS10868  city: Patiala  
-roll: 18CS13049  city: Patiala  
-roll: 22CS18867  city: Patiala  
-roll: 22CS18948  city: Amritsar  
-roll: 20CS11819  city: Patiala  
-roll: 20CS13098  city: Sangrur  
-roll: 19CS18313  city: Sangrur  
-roll: 12CS16014  city: Patiala  
-roll: 11CS16236  city: Ludhiana  
-roll: 21CS11015  city: Nabha  
-roll: 12CS19997  city: Amritsar  
-roll: 19CS13153  city: Patiala  
-roll: 18CS18494  city: Nabha  
-roll: 20CS12458  city: Gurdaspur  
-roll: 12CS12411  city: Patiala  
-roll: 15CS13128  city: Ludhiana  
-roll: 12CS12759  city: Ludhiana  
-roll: 12CS19659  city: Patiala  
-roll: 14CS16182  city: Kharagpur  
-roll: 12CS14361  city: Nabha  
-roll: 15CS19248  city: Gurdaspur  
-roll: 14CS17595  city: Ludhiana  
-roll: 17CS15185  city: Kharagpur  
-roll: 22CS12273  city: Patiala  
-roll: 21CS17045  city: Ludhiana  
-roll: 15CS17741  city: Nabha  
-roll: 17CS18654  city: Amritsar  
-roll: 12CS19400  city: Gurdaspur  
-roll: 15CS14212  city: Ludhiana  
 Request for page 5 of file simulation.db-journal
 	Page 5 of file simulation.db-journal already in buffer
 Request for page 5 of file simulation.db-journal
 	Page 5 of file simulation.db-journal already in buffer
 Request for page 6 of file simulation.db-journal
 	Page 6 of file simulation.db-journal loaded in free frame 6
-Request for page 6 of file simulation.db-journal
-	Page 6 of file simulation.db-journal already in buffer
 Request for page 7 of file simulation.db-journal
 	Page 7 of file simulation.db-journal loaded in free frame 7
+Request for page 8 of file simulation.db-journal
+	Page 8 of file simulation.db-journal loaded in free frame 8
+Request for page 9 of file simulation.db-journal
+	Page 9 of file simulation.db-journal loaded in free frame 9
+Request for page 9 of file simulation.db-journal
+	Page 9 of file simulation.db-journal already in buffer
+Request for page 12 of file simulation.db
+[readBlock] Reading page 12 of simulation.db
+	Page 12 of file simulation.db loaded in free frame 12
+Request for page 13 of file simulation.db
+[readBlock] Reading page 13 of simulation.db
+	Page 13 of file simulation.db loaded in free frame 13
+Request for page 14 of file simulation.db
+[readBlock] Reading page 14 of simulation.db
+	Page 14 of file simulation.db loaded in free frame 14
+Request for page 15 of file simulation.db
+[readBlock] Reading page 15 of simulation.db
+	Page 15 of file simulation.db loaded in free frame 15
+Request for page 16 of file simulation.db
+[readBlock] Reading page 16 of simulation.db
+	Page 16 of file simulation.db loaded in free frame 16
+Request for page 17 of file simulation.db
+[readBlock] Reading page 17 of simulation.db
+	Page 17 of file simulation.db loaded in free frame 17
+Request for page 18 of file simulation.db
+[readBlock] Reading page 18 of simulation.db
+	Page 18 of file simulation.db loaded in free frame 18
+Request for page 19 of file simulation.db
+[readBlock] Reading page 19 of simulation.db
+	Page 19 of file simulation.db loaded in free frame 19
+Request for page 9 of file simulation.db-journal
+	Page 9 of file simulation.db-journal already in buffer
+Request for page 9 of file simulation.db-journal
+	Page 9 of file simulation.db-journal already in buffer
+Request for page 10 of file simulation.db-journal
+	Page 10 of file simulation.db-journal loaded in free frame 10
+Request for page 11 of file simulation.db-journal
+	Page 11 of file simulation.db-journal loaded in free frame 11
+Request for page 12 of file simulation.db-journal
+	Page 12 of file simulation.db-journal loaded in free frame 12
+Request for page 13 of file simulation.db-journal
+	Page 13 of file simulation.db-journal loaded in free frame 13
+Request for page 13 of file simulation.db-journal
+	Page 13 of file simulation.db-journal already in buffer
+Request for page 13 of file simulation.db-journal
+	Page 13 of file simulation.db-journal already in buffer
+Request for page 13 of file simulation.db-journal
+	Page 13 of file simulation.db-journal already in buffer
+Request for page 14 of file simulation.db-journal
+	Page 14 of file simulation.db-journal loaded in free frame 14
+Request for page 15 of file simulation.db-journal
+	Page 15 of file simulation.db-journal loaded in free frame 15
+Request for page 16 of file simulation.db-journal
+	Page 16 of file simulation.db-journal loaded in free frame 16
+Request for page 17 of file simulation.db-journal
+	Page 17 of file simulation.db-journal loaded in free frame 17
+Request for page 17 of file simulation.db-journal
+	Page 17 of file simulation.db-journal already in buffer
+Request for page 20 of file simulation.db
+[readBlock] Reading page 20 of simulation.db
+	Page 20 of file simulation.db loaded in free frame 20
+Request for page 21 of file simulation.db
+[readBlock] Reading page 21 of simulation.db
+	Page 21 of file simulation.db loaded in free frame 21
+Request for page 22 of file simulation.db
+[readBlock] Reading page 22 of simulation.db
+	Page 22 of file simulation.db loaded in free frame 22
+Request for page 23 of file simulation.db
+[readBlock] Reading page 23 of simulation.db
+	Page 23 of file simulation.db loaded in free frame 23
+Request for page 24 of file simulation.db
+[readBlock] Reading page 24 of simulation.db
+	Page 24 of file simulation.db loaded in free frame 24
+Request for page 25 of file simulation.db
+[readBlock] Reading page 25 of simulation.db
+	Page 25 of file simulation.db loaded in free frame 25
+Request for page 26 of file simulation.db
+[readBlock] Reading page 26 of simulation.db
+	Page 26 of file simulation.db loaded in free frame 26
+Request for page 27 of file simulation.db
+[readBlock] Reading page 27 of simulation.db
+	Page 27 of file simulation.db loaded in free frame 27
+Request for page 17 of file simulation.db-journal
+	Page 17 of file simulation.db-journal already in buffer
+Request for page 17 of file simulation.db-journal
+	Page 17 of file simulation.db-journal already in buffer
+Request for page 18 of file simulation.db-journal
+	Page 18 of file simulation.db-journal loaded in free frame 18
+Request for page 19 of file simulation.db-journal
+	Page 19 of file simulation.db-journal loaded in free frame 19
+Request for page 20 of file simulation.db-journal
+	Page 20 of file simulation.db-journal loaded in free frame 20
+Request for page 21 of file simulation.db-journal
+	Page 21 of file simulation.db-journal loaded in free frame 21
+Request for page 21 of file simulation.db-journal
+	Page 21 of file simulation.db-journal already in buffer
+Request for page 21 of file simulation.db-journal
+	Page 21 of file simulation.db-journal already in buffer
+Request for page 21 of file simulation.db-journal
+	Page 21 of file simulation.db-journal already in buffer
+Request for page 22 of file simulation.db-journal
+	Page 22 of file simulation.db-journal loaded in free frame 22
+Request for page 23 of file simulation.db-journal
+	Page 23 of file simulation.db-journal loaded in free frame 23
+Request for page 24 of file simulation.db-journal
+	Page 24 of file simulation.db-journal loaded in free frame 24
+Request for page 25 of file simulation.db-journal
+	Page 25 of file simulation.db-journal loaded in free frame 25
+Request for page 25 of file simulation.db-journal
+	Page 25 of file simulation.db-journal already in buffer
+Total sum of all scores:
+total_score: 5284
+Disk reads: 42
+Disk writes: 0
 Request for page 0 of file simulation.db-journal
 	Page 0 of file simulation.db-journal already in buffer
-Request for page 0 of file simulation.db
-	Page 0 of file simulation.db already in buffer
-Request for page 1 of file simulation.db
-	Page 1 of file simulation.db already in buffer
-Request for page 2 of file simulation.db
-	Page 2 of file simulation.db already in buffer
-Request for page 3 of file simulation.db
-	Page 3 of file simulation.db already in buffer
-Request for page 4 of file simulation.db
-	Page 4 of file simulation.db already in buffer
+Request for page 0 of file simulation.db-journal
+	Page 0 of file simulation.db-journal already in buffer
+Request for page 0 of file simulation.db-journal
+	Page 0 of file simulation.db-journal already in buffer
+Request for page 0 of file simulation.db-journal
+	Page 0 of file simulation.db-journal already in buffer
+Request for page 0 of file simulation.db-journal
+	Page 0 of file simulation.db-journal already in buffer
+Request for page 0 of file simulation.db-journal
+	Page 0 of file simulation.db-journal already in buffer
+Request for page 0 of file simulation.db-journal
+	Page 0 of file simulation.db-journal already in buffer
 BufferPool cleared
-Inserted 166 records.
-Request for page 0 of file simulation.db
-	Page 0 of file simulation.db already in buffer
-Integrity check: ok
-Join query results:
-Request for page 0 of file simulation.db
-	Page 0 of file simulation.db already in buffer
-roll: 20CS13306  sport: Tennis  city: Kharagpur  
-roll: 18CS16651  sport: BasketBall  city: Gurdaspur  
-roll: 14CS18136  sport: Tennis  city: Gurdaspur  
-roll: 17CS10397  sport: Tennis  city: Sangrur  
-roll: 20CS13855  sport: TableTennis  city: Nabha  
-roll: 20CS16194  sport: Swimming  city: Amritsar  
-roll: 20CS14652  sport: Baseball  city: Sangrur  
-roll: 14CS18150  sport: Swimming  city: Gurdaspur  
-roll: 14CS14817  sport: BasketBall  city: Kharagpur  
-roll: 11CS17864  sport: Badminton  city: Ludhiana  
-roll: 16CS16441  sport: Cricket  city: Kharagpur  
-roll: 16CS12081  sport: BasketBall  city: Patiala  
-roll: 22CS18968  sport: Tennis  city: Sangrur  
-roll: 11CS13970  sport: BasketBall  city: Gurdaspur  
-roll: 14CS11165  sport: BasketBall  city: Ludhiana  
-roll: 13CS13632  sport: Tennis  city: Amritsar  
-roll: 11CS17445  sport: TableTennis  city: Sangrur  
-roll: 22CS14893  sport: TableTennis  city: Amritsar  
-roll: 19CS18447  sport: Tennis  city: Patiala  
-roll: 18CS18902  sport: Cricket  city: Gurdaspur  
-roll: 18CS19879  sport: Cricket  city: Gurdaspur  
-roll: 11CS10846  sport: Badminton  city: Gurdaspur  
-roll: 14CS18115  sport: Tennis  city: Nabha  
-roll: 11CS12189  sport: Baseball  city: Amritsar  
-roll: 21CS15078  sport: Swimming  city: Ludhiana  
-roll: 22CS17723  sport: BasketBall  city: Gurdaspur  
-roll: 19CS15081  sport: TableTennis  city: Nabha  
-roll: 12CS14265  sport: BasketBall  city: Nabha  
-roll: 16CS13040  sport: Tennis  city: Nabha  
-roll: 20CS11619  sport: BasketBall  city: Sangrur  
-roll: 13CS13202  sport: TableTennis  city: Patiala  
-roll: 20CS10141  sport: Badminton  city: Patiala  
-roll: 21CS11664  sport: TableTennis  city: Patiala  
-roll: 18CS14339  sport: BasketBall  city: Kharagpur  
-roll: 23CS10441  sport: Tennis  city: Kharagpur  
-roll: 13CS12591  sport: Tennis  city: Amritsar  
-roll: 23CS19202  sport: Swimming  city: Kharagpur  
-roll: 18CS14477  sport: Baseball  city: Sangrur  
-roll: 14CS18868  sport: Tennis  city: Amritsar  
-roll: 17CS19938  sport: Swimming  city: Patiala  
-roll: 18CS12534  sport: Tennis  city: Patiala  
-roll: 20CS10382  sport: Cricket  city: Kharagpur  
-roll: 16CS15973  sport: BasketBall  city: Ludhiana  
-roll: 14CS16717  sport: BasketBall  city: Gurdaspur  
-roll: 19CS14745  sport: Badminton  city: Kharagpur  
-roll: 13CS11708  sport: BasketBall  city: Ludhiana  
-roll: 23CS15557  sport: Baseball  city: Nabha  
-roll: 15CS12536  sport: TableTennis  city: Amritsar  
-roll: 22CS17700  sport: Badminton  city: Ludhiana  
-roll: 12CS11803  sport: TableTennis  city: Patiala  
-roll: 20CS18753  sport: TableTennis  city: Patiala  
-roll: 19CS18689  sport: BasketBall  city: Nabha  
-roll: 20CS16828  sport: Cricket  city: Amritsar  
-roll: 14CS18947  sport: Baseball  city: Kharagpur  
-roll: 18CS10348  sport: Tennis  city: Ludhiana  
-roll: 13CS16976  sport: Cricket  city: Gurdaspur  
-roll: 16CS15056  sport: Tennis  city: Patiala  
-roll: 11CS11658  sport: Baseball  city: Patiala  
-roll: 23CS15973  sport: Baseball  city: Gurdaspur  
-roll: 20CS17740  sport: Baseball  city: Gurdaspur  
-roll: 15CS13515  sport: Baseball  city: Sangrur  
-roll: 22CS13832  sport: Baseball  city: Ludhiana  
-roll: 19CS15377  sport: Baseball  city: Nabha  
-roll: 23CS10288  sport: Baseball  city: Patiala  
-roll: 23CS14792  sport: BasketBall  city: Nabha  
-roll: 17CS14974  sport: Baseball  city: Ludhiana  
-roll: 12CS11340  sport: Badminton  city: Ludhiana  
-roll: 14CS11777  sport: Baseball  city: Patiala  
-roll: 14CS11627  sport: Cricket  city: Sangrur  
-roll: 12CS13432  sport: Swimming  city: Nabha  
-roll: 14CS17914  sport: Badminton  city: Amritsar  
-roll: 14CS18895  sport: TableTennis  city: Sangrur  
-roll: 17CS12447  sport: Tennis  city: Nabha  
-roll: 17CS13409  sport: Cricket  city: Sangrur  
-roll: 14CS17857  sport: TableTennis  city: Sangrur  
-roll: 19CS18501  sport: Tennis  city: Gurdaspur  
-roll: 23CS12341  sport: Swimming  city: Kharagpur  
-roll: 14CS10927  sport: Cricket  city: Kharagpur  
-roll: 23CS16400  sport: Badminton  city: Ludhiana  
-roll: 17CS12052  sport: Badminton  city: Ludhiana  
-roll: 11CS14454  sport: BasketBall  city: Kharagpur  
-roll: 22CS13287  sport: Cricket  city: Sangrur  
-roll: 15CS18734  sport: Baseball  city: Patiala  
-roll: 11CS15678  sport: TableTennis  city: Sangrur  
-roll: 13CS19206  sport: Cricket  city: Patiala  
-roll: 13CS12645  sport: Baseball  city: Nabha  
-roll: 23CS19529  sport: TableTennis  city: Patiala  
-roll: 14CS18369  sport: TableTennis  city: Kharagpur  
-roll: 11CS18666  sport: Cricket  city: Amritsar  
-roll: 11CS12757  sport: Swimming  city: Ludhiana  
-roll: 23CS17853  sport: Tennis  city: Patiala  
-roll: 11CS14047  sport: Tennis  city: Nabha  
-roll: 19CS19857  sport: TableTennis  city: Sangrur  
-roll: 15CS15479  sport: Swimming  city: Sangrur  
-roll: 16CS17435  sport: Badminton  city: Gurdaspur  
-roll: 15CS11787  sport: Badminton  city: Patiala  
-roll: 21CS18783  sport: Badminton  city: Patiala  
-roll: 23CS14376  sport: Tennis  city: Sangrur  
-roll: 19CS11142  sport: Cricket  city: Patiala  
-roll: 23CS11367  sport: Badminton  city: Gurdaspur  
-roll: 23CS17121  sport: Cricket  city: Nabha  
-roll: 11CS16894  sport: Swimming  city: Kharagpur  
-roll: 14CS17389  sport: Badminton  city: Gurdaspur  
-roll: 19CS12275  sport: TableTennis  city: Ludhiana  
-roll: 15CS13488  sport: Tennis  city: Sangrur  
-roll: 19CS12950  sport: Baseball  city: Amritsar  
-roll: 12CS14556  sport: Swimming  city: Gurdaspur  
-roll: 12CS10338  sport: TableTennis  city: Amritsar  
-roll: 11CS11314  sport: BasketBall  city: Sangrur  
-roll: 20CS13319  sport: Cricket  city: Sangrur  
-roll: 13CS13626  sport: Cricket  city: Ludhiana  
-roll: 21CS10493  sport: Cricket  city: Sangrur  
-roll: 17CS13311  sport: Badminton  city: Kharagpur  
-roll: 15CS19653  sport: TableTennis  city: Ludhiana  
-roll: 13CS18615  sport: Baseball  city: Patiala  
-roll: 22CS14527  sport: BasketBall  city: Amritsar  
-roll: 19CS16267  sport: Swimming  city: Amritsar  
-roll: 14CS12255  sport: BasketBall  city: Kharagpur  
-roll: 18CS14670  sport: Badminton  city: Ludhiana  
-roll: 16CS16861  sport: Swimming  city: Kharagpur  
-roll: 18CS12766  sport: TableTennis  city: Gurdaspur  
-roll: 13CS11046  sport: Cricket  city: Kharagpur  
-roll: 19CS16294  sport: Cricket  city: Kharagpur  
-roll: 20CS15801  sport: TableTennis  city: Nabha  
-roll: 17CS13262  sport: Cricket  city: Nabha  
-roll: 18CS19062  sport: Cricket  city: Patiala  
-roll: 15CS11999  sport: Tennis  city: Sangrur  
-roll: 15CS16389  sport: Cricket  city: Kharagpur  
-roll: 13CS17145  sport: Swimming  city: Gurdaspur  
-roll: 12CS12126  sport: Swimming  city: Ludhiana  
-roll: 11CS19429  sport: Badminton  city: Sangrur  
-roll: 16CS19609  sport: Swimming  city: Amritsar  
-roll: 18CS14731  sport: Swimming  city: Patiala  
-roll: 16CS10774  sport: BasketBall  city: Nabha  
-roll: 17CS11082  sport: Badminton  city: Gurdaspur  
-roll: 22CS12574  sport: Badminton  city: Sangrur  
-roll: 20CS16004  sport: Swimming  city: Nabha  
-roll: 20CS10868  sport: Cricket  city: Patiala  
-roll: 18CS13049  sport: Badminton  city: Patiala  
-roll: 22CS18867  sport: Badminton  city: Patiala  
-roll: 22CS18948  sport: Baseball  city: Amritsar  
-roll: 20CS11819  sport: Cricket  city: Patiala  
-roll: 20CS13098  sport: TableTennis  city: Sangrur  
-roll: 19CS18313  sport: Baseball  city: Sangrur  
-roll: 12CS16014  sport: Tennis  city: Patiala  
-roll: 11CS16236  sport: Tennis  city: Ludhiana  
-roll: 21CS11015  sport: Badminton  city: Nabha  
-roll: 12CS19997  sport: Badminton  city: Amritsar  
-roll: 19CS13153  sport: Tennis  city: Patiala  
-roll: 18CS18494  sport: BasketBall  city: Nabha  
-roll: 20CS12458  sport: Tennis  city: Gurdaspur  
-roll: 12CS12411  sport: Swimming  city: Patiala  
-roll: 15CS13128  sport: Tennis  city: Ludhiana  
-roll: 12CS12759  sport: BasketBall  city: Ludhiana  
-roll: 12CS19659  sport: BasketBall  city: Patiala  
-roll: 14CS16182  sport: Badminton  city: Kharagpur  
-roll: 12CS14361  sport: Swimming  city: Nabha  
-roll: 15CS19248  sport: Badminton  city: Gurdaspur  
-roll: 14CS17595  sport: Tennis  city: Ludhiana  
-roll: 17CS15185  sport: Swimming  city: Kharagpur  
-roll: 22CS12273  sport: TableTennis  city: Patiala  
-roll: 21CS17045  sport: TableTennis  city: Ludhiana  
-roll: 15CS17741  sport: Tennis  city: Nabha  
-roll: 17CS18654  sport: Cricket  city: Amritsar  
-roll: 12CS19400  sport: Swimming  city: Gurdaspur  
-roll: 15CS14212  sport: Swimming  city: Ludhiana  
-Disk reads: 10
-Disk writes: 7
 BufferPool cleared
